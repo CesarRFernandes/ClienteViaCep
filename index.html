@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cliente via CEP</title>
+  </head>
+  <body>
+    <h1>Busque o seu CEP</h1>
+    <form id="cepForm">
+      <label for="cep">CEP:</label>
+      <input
+        type="text"
+        id="cep"
+        placeholder="Digite seu CEP"
+        maxlength="9"
+        autofocus
+      />
+      <button type="button" id="searchBtn">Buscar</button>
+    </form>
+    <div id="resultado">
+      <p>
+        <strong>Logradouro:</strong> <span id="logradouro"></span> <br />
+        <strong>Localidade:</strong> <span id="localidade"></span> <br />
+        <strong>UF:</strong> <span id="uf"></span>
+      </p>
+    </div>
+    <script src="logica.js"></script>
+  </body>
+</html>
